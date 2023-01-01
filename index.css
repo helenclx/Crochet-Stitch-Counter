@@ -8,11 +8,16 @@ body {
     overflow: hidden;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     background-color: #f2e6ff;
-    padding: 10px 15px;
-    max-width: 80%;
-    margin: auto;
+    padding: 15px 30px;
+    margin: 0 auto;
     border: 4px solid blueviolet;
     border-radius: 20px;
 }
@@ -40,6 +45,10 @@ button {
 }
 
 #increment-btn {
+    background: indigo;
+}
+
+#decrement-btn {
     background: indigo;
 }
 
