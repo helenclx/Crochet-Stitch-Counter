@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" defer></script>
+
         <title>Crochet Stitch Counter</title>
     </head>
     <body>
         <main>
             <div class="container">
                 <h1>Crochet stitch count:</h1>
-                <h2 id="count-el">0</h2>
-                <button id="increment-btn" onclick="increment()">INCREMENT</button>
-                <button id="decrement-btn" onclick="decrement()">DECREMENT</button><br>
-                <button id="save-btn" onclick="save()">SAVE</button>
-                <p id="save-el">Previous stitches: </p>
+                <h2 class="count">0</h2>
+
+                <button class="decrement-btn" onclick="decrement()">- DECREMENT</button>
+                <button class="increment-btn" onclick="increment()">+ INCREMENT</button><br>
+                <button class="save-btn" onclick="save()">SAVE</button>
+                
+                <p class="prev-count">Previous stitches: </p>
             </div>
         </main>
-        <script src="./index.js"></script>
+        <footer class="attribution">
+            Coded by <a href="https://helenclx.github.io/" target="_blank">Helen Chong</a>.
+        </footer>
     </body>
 </html>
